@@ -1,0 +1,36 @@
+<project default="compile">
+
+    <!-- Define a property, which is like a variable for the build file, -->
+    <!--  with the classpath for all compilation & execution targets. -->
+    <property name="classpath" value="bin:biuoop-1.4.jar" />
+    <property name="args" value=""/>
+
+    <!-- Compile all java files under `src`, and export .class files into `bin` -->
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac classpath="${classpath}" srcdir="src" destdir="bin" includeantruntime="false"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+
+    <target name="run" depends="compile" >
+        <java classname="Ass6Game" classpath="${classpath}" fork="true">
+        <arg line="${args}"/>
+        </java>
+    </target>
+
+    <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
+         classpath="checkstyle-8.44-all.jar"/>
+
+     <!-- Run checkstyle on all our source files -->
+    <target name="check">
+        <java jar="checkstyle-8.44-all.jar" fork="true">
+            <arg line="-c biuoop.xml" />
+            <arg line="src/*.java"/>
+        </java>
+    </target>
+    
+
+</project>
