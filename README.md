@@ -15,11 +15,11 @@ This project is an implementation of the classic Arkanoid game using Object-Orie
 
 ## Screenshots
 
-![First Level](ScreenShots/FirstLevel.jpeg)
+![First Level](ScreenShots/FirstLevel.jpg)
 
-![Second Level](ScreenShots/SecondLevel.jpeg)
+![Second Level](ScreenShots/SecondLevel.jpg)
 
-![Third Level](ScreenShots/ThirdLevel.jpeg)
+![Third Level](ScreenShots/ThirdLevel.jpg)
 
 ## How to Run
 
