@@ -15,6 +15,12 @@ This project is an implementation of the classic Arkanoid game using Object-Orie
 
 ## Screenshots
 
+![First Level](ScreenShots/FirstLevel.jpeg)
+
+![Second Level](ScreenShots/SecondLevel.jpeg)
+
+![Third Level](ScreenShots/ThirdLevel.jpeg)
+
 ## How to Run
 
 1. Clone the repository to your local machine.
